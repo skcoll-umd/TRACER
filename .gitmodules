@@ -1,0 +1,9 @@
+[submodule "APT_CyberCriminal_Campagin_Collections"]
+	path = APT_CyberCriminal_Campagin_Collections
+	url = https://github.com/CyberMonitor/APT_CyberCriminal_Campagin_Collections.git
+[submodule "CTI-HAL"]
+	path = CTI-HAL
+	url = https://github.com/dessertlab/CTI-HAL.git
+[submodule "anno-ctr-lrec-coling-2024"]
+	path = anno-ctr-lrec-coling-2024
+	url = https://github.com/boschresearch/anno-ctr-lrec-coling-2024.git

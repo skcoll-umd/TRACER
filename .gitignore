@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environments
+.venv/
+
+
+# macOS
+.DS_Store
+
+# VSCode
+.vscode/
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# Build
+build/
+dist/
+*.egg-info/
