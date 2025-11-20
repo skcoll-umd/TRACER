@@ -21,3 +21,7 @@ This directory contains scripts for building CTI datasets and running a BM25-bas
 
 - `sanitize_csv_aliases.py`  
   Cleans and normalizes alias fields in CSV files (e.g., trimming whitespace, deduplicating aliases, enforcing consistent formats).
+
+
+## BM25 Training Pipeline
+![BM25 Training Pipeline](TRACER BM25 Pipeline.png)
