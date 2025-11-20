@@ -24,4 +24,4 @@ This directory contains scripts for building CTI datasets and running a BM25-bas
 
 
 ## BM25 Training Pipeline
-![BM25 Training Pipeline](TRACER BM25 Pipeline.png)
+![BM25 Training Pipeline](images/bm25pipeline.png)
