@@ -1,0 +1,105 @@
+{
+  "threat_actor": "APT34",
+  "group_name": "APT34",
+  "group_id": "G0049",
+  "mitre_intrusion_set": {
+    "id": "intrusion-set--68ba94ab-78b8-43e7-83e2-aed3466882c6",
+    "gid": "G0049",
+    "name": "APT34",
+    "matched_alias": "apt34"
+  },
+  "malware_family": "Self-Developed Backdoor",
+  "campaign_name": null,
+  "attack_ttp_map": {
+    "T1003": "OS Credential Dumping",
+    "T1133": "External Remote Services",
+    "T1076": "Remote Desktop Protocol",
+    "T1021": "Remote Services",
+    "T1090": "Proxy",
+    "T1059": "Command and Scripting Interpreter",
+    "T1074": "Data Staged",
+    "T1064": "Scripting",
+    "T1102": "Web Service",
+    "T1015": "Accessibility Features",
+    "T1068": "Exploitation for Privilege Escalation",
+    "T1002": "Data Compressed",
+    "T1081": "Credentials in Files",
+    "T1100": "Web Shell",
+    "T1075": "Pass the Hash",
+    "T1065": "Uncommonly Used Port",
+    "T1136": "Create Account",
+    "T1046": "Network Service Discovery",
+    "T1105": "Ingress Tool Transfer",
+    "T1086": "PowerShell",
+    "T1094": "Custom Command and Control Protocol"
+  },
+  "technique_to_tactics": {
+    "T1003": [
+      "TA0006"
+    ],
+    "T1133": [
+      "TA0001",
+      "TA0003"
+    ],
+    "T1076": [
+      "TA0008"
+    ],
+    "T1021": [
+      "TA0008"
+    ],
+    "T1090": [
+      "TA0011"
+    ],
+    "T1059": [
+      "TA0002"
+    ],
+    "T1074": [
+      "TA0009"
+    ],
+    "T1064": [
+      "TA0002",
+      "TA0005"
+    ],
+    "T1102": [
+      "TA0011"
+    ],
+    "T1015": [
+      "TA0003",
+      "TA0004"
+    ],
+    "T1068": [
+      "TA0004"
+    ],
+    "T1002": [
+      "TA0010"
+    ],
+    "T1081": [
+      "TA0006"
+    ],
+    "T1100": [
+      "TA0003",
+      "TA0004"
+    ],
+    "T1075": [
+      "TA0008"
+    ],
+    "T1065": [
+      "TA0011"
+    ],
+    "T1136": [
+      "TA0003"
+    ],
+    "T1046": [
+      "TA0007"
+    ],
+    "T1105": [
+      "TA0011"
+    ],
+    "T1086": [
+      "TA0002"
+    ],
+    "T1094": [
+      "TA0011"
+    ]
+  }
+}

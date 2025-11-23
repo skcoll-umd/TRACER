@@ -1,0 +1,136 @@
+{
+  "threat_actor": "OilRig",
+  "group_name": "OilRig",
+  "group_id": "G0049",
+  "mitre_intrusion_set": {
+    "id": "intrusion-set--4ca1929c-7d64-4aab-b849-badbfc0c760d",
+    "gid": "G0049",
+    "name": "OilRig",
+    "matched_alias": "ta452"
+  },
+  "malware_family": null,
+  "campaign_name": null,
+  "attack_ttp_map": {
+    "T1053.005": "Scheduled Task",
+    "T1560.001": "Archive via Utility",
+    "T1113": "Screen Capture",
+    "T1033": "System Owner/User Discovery",
+    "T1056.001": "Keylogging",
+    "T1087.002": "Domain Account",
+    "T1204.002": "Malicious File",
+    "T1573.001": "Symmetric Cryptography",
+    "T1566.001": "Spearphishing Attachment",
+    "T1007": "System Service Discovery",
+    "T1082": "System Information Discovery",
+    "T1053": "Scheduled Task/Job",
+    "T1560": "Archive Collected Data",
+    "T1112": "Modify Registry",
+    "T1087": "Account Discovery",
+    "T1059": "Command and Scripting Interpreter",
+    "T1083": "File and Directory Discovery",
+    "T1049": "System Network Connections Discovery",
+    "T1204": "User Execution",
+    "T1057": "Process Discovery",
+    "T1059.001": "PowerShell",
+    "T1566": "Phishing",
+    "T1027": "Obfuscated Files or Information",
+    "T1573": "Encrypted Channel",
+    "T1056": "Input Capture",
+    "T1518.001": "Security Software Discovery",
+    "T1518": "Software Discovery",
+    "T1124": "System Time Discovery"
+  },
+  "technique_to_tactics": {
+    "T1053.005": [
+      "TA0002",
+      "TA0003",
+      "TA0004"
+    ],
+    "T1560.001": [
+      "TA0009"
+    ],
+    "T1113": [
+      "TA0009"
+    ],
+    "T1033": [
+      "TA0007"
+    ],
+    "T1056.001": [
+      "TA0006",
+      "TA0009"
+    ],
+    "T1087.002": [
+      "TA0007"
+    ],
+    "T1204.002": [
+      "TA0002"
+    ],
+    "T1573.001": [
+      "TA0011"
+    ],
+    "T1566.001": [
+      "TA0001"
+    ],
+    "T1007": [
+      "TA0007"
+    ],
+    "T1082": [
+      "TA0007"
+    ],
+    "T1053": [
+      "TA0002",
+      "TA0003",
+      "TA0004"
+    ],
+    "T1560": [
+      "TA0009"
+    ],
+    "T1112": [
+      "TA0003",
+      "TA0005"
+    ],
+    "T1087": [
+      "TA0007"
+    ],
+    "T1059": [
+      "TA0002"
+    ],
+    "T1083": [
+      "TA0007"
+    ],
+    "T1049": [
+      "TA0007"
+    ],
+    "T1204": [
+      "TA0002"
+    ],
+    "T1057": [
+      "TA0007"
+    ],
+    "T1059.001": [
+      "TA0002"
+    ],
+    "T1566": [
+      "TA0001"
+    ],
+    "T1027": [
+      "TA0005"
+    ],
+    "T1573": [
+      "TA0011"
+    ],
+    "T1056": [
+      "TA0006",
+      "TA0009"
+    ],
+    "T1518.001": [
+      "TA0007"
+    ],
+    "T1518": [
+      "TA0007"
+    ],
+    "T1124": [
+      "TA0007"
+    ]
+  }
+}

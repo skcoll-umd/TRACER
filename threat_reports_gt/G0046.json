@@ -1,0 +1,45 @@
+{
+  "threat_actor": "FIN7",
+  "group_name": "FIN7",
+  "group_id": "G0046",
+  "mitre_intrusion_set": {
+    "id": "intrusion-set--3753cc21-2dae-4dfb-8481-d004e74502cc",
+    "gid": "G0046",
+    "name": "FIN7",
+    "matched_alias": "sangria tempest"
+  },
+  "malware_family": "stage loader",
+  "campaign_name": null,
+  "attack_ttp_map": {
+    "T1090": "Proxy",
+    "T1482": "Domain Trust Discovery",
+    "T1049": "System Network Connections Discovery",
+    "T1059.001": "PowerShell",
+    "T1071.001": "Web Protocols",
+    "T1018": "Remote System Discovery",
+    "T1105": "Ingress Tool Transfer"
+  },
+  "technique_to_tactics": {
+    "T1090": [
+      "TA0011"
+    ],
+    "T1482": [
+      "TA0007"
+    ],
+    "T1049": [
+      "TA0007"
+    ],
+    "T1059.001": [
+      "TA0002"
+    ],
+    "T1071.001": [
+      "TA0011"
+    ],
+    "T1018": [
+      "TA0007"
+    ],
+    "T1105": [
+      "TA0011"
+    ]
+  }
+}

@@ -1,0 +1,123 @@
+{
+  "threat_actor": "Lazarus Group",
+  "group_name": "Lazarus Group",
+  "group_id": "G0032",
+  "mitre_intrusion_set": {
+    "id": "intrusion-set--c93fccb1-e8e8-42cf-ae33-2ad1d183913a",
+    "gid": "G0032",
+    "name": "Lazarus Group",
+    "matched_alias": "lazarus group"
+  },
+  "malware_family": "Wslink loader",
+  "campaign_name": "GhostSecretandtheBankshotimplant",
+  "attack_ttp_map": {
+    "T1033": "System Owner/User Discovery",
+    "T1587.001": "Malware",
+    "T1087.002": "Domain Account",
+    "T1087.001": "Local Account",
+    "T1135": "Network Share Discovery",
+    "T1082": "System Information Discovery",
+    "T1106": "Native API",
+    "T1005": "Data from Local System",
+    "T1560.002": "Archive via Library",
+    "T1560": "Archive Collected Data",
+    "T1134.002": "Create Process with Token",
+    "T1016": "System Network Configuration Discovery",
+    "T1087": "Account Discovery",
+    "T1059": "Command and Scripting Interpreter",
+    "T1070": "Indicator Removal",
+    "T1083": "File and Directory Discovery",
+    "T1049": "System Network Connections Discovery",
+    "T1057": "Process Discovery",
+    "T1059.001": "PowerShell",
+    "T1531": "Account Access Removal",
+    "T1614.001": "System Language Discovery",
+    "T1012": "Query Registry",
+    "T1614": "System Location Discovery",
+    "T1070.004": "File Deletion",
+    "T1134": "Access Token Manipulation",
+    "T1587": "Develop Capabilities"
+  },
+  "technique_to_tactics": {
+    "T1033": [
+      "TA0007"
+    ],
+    "T1587.001": [
+      "TA0042"
+    ],
+    "T1087.002": [
+      "TA0007"
+    ],
+    "T1087.001": [
+      "TA0007"
+    ],
+    "T1135": [
+      "TA0007"
+    ],
+    "T1082": [
+      "TA0007"
+    ],
+    "T1106": [
+      "TA0002"
+    ],
+    "T1005": [
+      "TA0009"
+    ],
+    "T1560.002": [
+      "TA0009"
+    ],
+    "T1560": [
+      "TA0009"
+    ],
+    "T1134.002": [
+      "TA0004",
+      "TA0005"
+    ],
+    "T1016": [
+      "TA0007"
+    ],
+    "T1087": [
+      "TA0007"
+    ],
+    "T1059": [
+      "TA0002"
+    ],
+    "T1070": [
+      "TA0005"
+    ],
+    "T1083": [
+      "TA0007"
+    ],
+    "T1049": [
+      "TA0007"
+    ],
+    "T1057": [
+      "TA0007"
+    ],
+    "T1059.001": [
+      "TA0002"
+    ],
+    "T1531": [
+      "TA0040"
+    ],
+    "T1614.001": [
+      "TA0007"
+    ],
+    "T1012": [
+      "TA0007"
+    ],
+    "T1614": [
+      "TA0007"
+    ],
+    "T1070.004": [
+      "TA0005"
+    ],
+    "T1134": [
+      "TA0004",
+      "TA0005"
+    ],
+    "T1587": [
+      "TA0042"
+    ]
+  }
+}

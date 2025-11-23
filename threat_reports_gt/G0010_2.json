@@ -1,0 +1,134 @@
+{
+  "threat_actor": "OilRig",
+  "group_name": "OilRig",
+  "group_id": "G0049",
+  "mitre_intrusion_set": {
+    "id": "intrusion-set--4ca1929c-7d64-4aab-b849-badbfc0c760d",
+    "gid": "G0049",
+    "name": "OilRig",
+    "matched_alias": "oilrig"
+  },
+  "malware_family": "Carbon backdoor",
+  "campaign_name": "being dubbed as Epic Turla",
+  "attack_ttp_map": {
+    "T1047": "Windows Management Instrumentation",
+    "T1033": "System Owner/User Discovery",
+    "T1069": "Permission Groups Discovery",
+    "T1204.002": "Malicious File",
+    "T1135": "Network Share Discovery",
+    "T1120": "Peripheral Device Discovery",
+    "T1082": "System Information Discovery",
+    "T1071": "Application Layer Protocol",
+    "T1053": "Scheduled Task/Job",
+    "T1055": "Process Injection",
+    "T1547.009": "Shortcut Modification",
+    "T1010": "Application Window Discovery",
+    "T1112": "Modify Registry",
+    "T1016": "System Network Configuration Discovery",
+    "T1087": "Account Discovery",
+    "T1059": "Command and Scripting Interpreter",
+    "T1083": "File and Directory Discovery",
+    "T1102": "Web Service",
+    "T1204": "User Execution",
+    "T1057": "Process Discovery",
+    "T1041": "Exfiltration Over C2 Channel",
+    "T1048": "Exfiltration Over Alternative Protocol",
+    "T1566": "Phishing",
+    "T1571": "Non-Standard Port",
+    "T1027": "Obfuscated Files or Information",
+    "T1573": "Encrypted Channel",
+    "T1213": "Data from Information Repositories",
+    "T1189": "Drive-by Compromise"
+  },
+  "technique_to_tactics": {
+    "T1047": [
+      "TA0002"
+    ],
+    "T1033": [
+      "TA0007"
+    ],
+    "T1069": [
+      "TA0007"
+    ],
+    "T1204.002": [
+      "TA0002"
+    ],
+    "T1135": [
+      "TA0007"
+    ],
+    "T1120": [
+      "TA0007"
+    ],
+    "T1082": [
+      "TA0007"
+    ],
+    "T1071": [
+      "TA0011"
+    ],
+    "T1053": [
+      "TA0002",
+      "TA0003",
+      "TA0004"
+    ],
+    "T1055": [
+      "TA0004",
+      "TA0005"
+    ],
+    "T1547.009": [
+      "TA0003",
+      "TA0004"
+    ],
+    "T1010": [
+      "TA0007"
+    ],
+    "T1112": [
+      "TA0003",
+      "TA0005"
+    ],
+    "T1016": [
+      "TA0007"
+    ],
+    "T1087": [
+      "TA0007"
+    ],
+    "T1059": [
+      "TA0002"
+    ],
+    "T1083": [
+      "TA0007"
+    ],
+    "T1102": [
+      "TA0011"
+    ],
+    "T1204": [
+      "TA0002"
+    ],
+    "T1057": [
+      "TA0007"
+    ],
+    "T1041": [
+      "TA0010"
+    ],
+    "T1048": [
+      "TA0010"
+    ],
+    "T1566": [
+      "TA0001"
+    ],
+    "T1571": [
+      "TA0011"
+    ],
+    "T1027": [
+      "TA0005"
+    ],
+    "T1573": [
+      "TA0011"
+    ],
+    "T1213": [
+      "TA0009"
+    ],
+    "T1189": [
+      "TA0001"
+    ]
+  }
+}

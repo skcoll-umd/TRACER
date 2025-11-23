@@ -1,0 +1,61 @@
+{
+  "threat_actor": "APT28",
+  "group_name": "APT28",
+  "group_id": "G0007",
+  "mitre_intrusion_set": {
+    "id": "intrusion-set--bef4c620-0787-42a8-a96d-b7eb6e85917c",
+    "gid": "G0007",
+    "name": "APT28",
+    "matched_alias": "apt28"
+  },
+  "malware_family": "OpenSSH trojan",
+  "campaign_name": null,
+  "attack_ttp_map": {
+    "T1557": "Adversary-in-the-Middle",
+    "T1119": "Automated Collection",
+    "T1020": "Automated Exfiltration",
+    "T1584": "Compromise Infrastructure",
+    "T1566": "Phishing",
+    "T1546": "Event Triggered Execution",
+    "T1203": "Exploitation for Client Execution",
+    "T1588": "Obtain Capabilities",
+    "T1587": "Develop Capabilities",
+    "T1556": "Modify Authentication Process"
+  },
+  "technique_to_tactics": {
+    "T1557": [
+      "TA0006",
+      "TA0009"
+    ],
+    "T1119": [
+      "TA0009"
+    ],
+    "T1020": [
+      "TA0010"
+    ],
+    "T1584": [
+      "TA0042"
+    ],
+    "T1566": [
+      "TA0001"
+    ],
+    "T1546": [
+      "TA0003",
+      "TA0004"
+    ],
+    "T1203": [
+      "TA0002"
+    ],
+    "T1588": [
+      "TA0042"
+    ],
+    "T1587": [
+      "TA0042"
+    ],
+    "T1556": [
+      "TA0003",
+      "TA0005",
+      "TA0006"
+    ]
+  }
+}
