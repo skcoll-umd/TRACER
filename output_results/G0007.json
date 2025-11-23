@@ -1,0 +1,31 @@
+{
+  "Threat_actor": "APT28",
+  "Group_Name": "Fancy Bear",
+  "Group_ID": "G0007",
+  "malware_family": "unknown",
+  "Campaign_Name": "NTLM Relay Campaign",
+  "Attack_to_TTP_map": {
+    "T1020": "Automated Exfiltration",
+    "T1119": "Automated Collection",
+    "T1203": "Exploitation for Client Execution",
+    "T1546": "Event Triggered Execution",
+    "T1556": "Modify Authentication Process",
+    "T1557": "Man-in-the-Middle",
+    "T1566": "Phishing",
+    "T1584": "Compromise Infrastructure",
+    "T1587": "Develop Capabilities",
+    "T1588": "Obtain Capabilities"
+  },
+  "Techniques_to_Tactic": {
+    "T1020": "TA0010",
+    "T1119": "TA0009",
+    "T1203": "TA0002",
+    "T1546": "TA0003",
+    "T1556": "TA0006",
+    "T1557": "TA0006",
+    "T1566": "TA0001",
+    "T1584": "TA0042",
+    "T1587": "TA0042",
+    "T1588": "TA0042"
+  }
+}

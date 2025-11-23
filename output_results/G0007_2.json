@@ -1,0 +1,17 @@
+{
+  "Threat_actor": "APT41",
+  "Group_Name": "APT41",
+  "Group_ID": "G0096",
+  "malware_family": "Empire",
+  "Campaign_Name": "Router Exploitation Campaign",
+  "Attack_to_TTP_map": {
+    "T1078.001": "Valid Accounts: Default Accounts",
+    "T1190": "Exploit Public-Facing Application",
+    "T1590": "Gather Victim Network Information"
+  },
+  "Techniques_to_Tactic": {
+    "T1078.001": "TA0001",
+    "T1190": "TA0001",
+    "T1590": "TA0043"
+  }
+}

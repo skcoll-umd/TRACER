@@ -1,0 +1,25 @@
+{
+  "Threat_actor": "APT29",
+  "Group_Name": "Cozy Bear",
+  "Group_ID": "G0016",
+  "malware_family": "CozyCar",
+  "Campaign_Name": "OneDrive Updater Campaign",
+  "Attack_to_TTP_map": {
+    "T1018": "Remote System Discovery",
+    "T1049": "System Network Connections Discovery",
+    "T1059.001": "PowerShell",
+    "T1071.001": "Web Protocols",
+    "T1090": "Proxy",
+    "T1105": "Ingress Tool Transfer",
+    "T1482": "Domain Trust Discovery"
+  },
+  "Techniques_to_Tactic": {
+    "T1018": "TA0007",
+    "T1049": "TA0007",
+    "T1059.001": "TA0002",
+    "T1071.001": "TA0011",
+    "T1090": "TA0011",
+    "T1105": "TA0011",
+    "T1482": "TA0007"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "Threat_actor": "Mustang Panda",
+  "Group_Name": "Mustang Panda",
+  "Group_ID": "G0129",
+  "malware_family": "DICELOADER",
+  "Campaign_Name": "March DICELOADER Campaign",
+  "Attack_to_TTP_map": {
+    "T1001": "Data Obfuscation",
+    "T1010": "Application Window Discovery",
+    "T1047": "Windows Management Instrumentation",
+    "T1057": "Process Discovery",
+    "T1059": "Command and Scripting Interpreter",
+    "T1059.001": "PowerShell",
+    "T1071": "Application Layer Protocol",
+    "T1083": "File and Directory Discovery",
+    "T1497": "Virtualization/Sandbox Evasion",
+    "T1566": "Phishing",
+    "T1573": "Encrypted Channel"
+  },
+  "Techniques_to_Tactic": {
+    "T1001": "TA0011",
+    "T1010": "TA0007",
+    "T1047": "TA0002",
+    "T1057": "TA0007",
+    "T1059": "TA0002",
+    "T1059.001": "TA0002",
+    "T1071": "TA0011",
+    "T1083": "TA0007",
+    "T1497": "TA0005",
+    "T1566": "TA0001",
+    "T1573": "TA0011"
+  }
+}

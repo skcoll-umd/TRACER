@@ -1,0 +1,21 @@
+{
+  "Threat_actor": "APT41",
+  "Group_Name": "Double Dragon",
+  "Group_ID": "G0096",
+  "malware_family": "DOWNIISSA",
+  "Campaign_Name": "Operation ShadowPad",
+  "Attack_to_TTP_map": {
+    "T1027": "Obfuscated Files or Information",
+    "T1059": "Command and Scripting Interpreter",
+    "T1082": "System Information Discovery",
+    "T1124": "System Time Discovery",
+    "T1140": "Deobfuscate/Decode Files or Information"
+  },
+  "Techniques_to_Tactic": {
+    "T1027": "TA0005",
+    "T1059": "TA0002",
+    "T1082": "TA0007",
+    "T1124": "TA0007",
+    "T1140": "TA0005"
+  }
+}
