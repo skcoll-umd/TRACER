@@ -1,0 +1,111 @@
+{
+  "attack_ttp_ids": [
+    "T1020",
+    "T1119",
+    "T1203",
+    "T1546",
+    "T1556",
+    "T1557",
+    "T1566",
+    "T1584",
+    "T1587",
+    "T1588"
+  ],
+  "attack_tactic_ids": [
+    "TA0001",
+    "TA0002",
+    "TA0003",
+    "TA0004",
+    "TA0005",
+    "TA0006",
+    "TA0009",
+    "TA0010",
+    "TA0042"
+  ],
+  "attack_tactics": [
+    "Initial Access",
+    "Execution",
+    "Persistence",
+    "Privilege Escalation",
+    "Defense Evasion",
+    "Credential Access",
+    "Collection",
+    "Exfiltration",
+    "Resource Development"
+  ],
+  "delivery_vectors": [
+    "document",
+    "phishing"
+  ],
+  "sectors": [
+    "Aerospace",
+    "Defense",
+    "Education",
+    "Energy",
+    "Government",
+    "Hospitality",
+    "Manufacturing",
+    "Media",
+    "Retail",
+    "Technology",
+    "Transport",
+    "Utilities"
+  ],
+  "infrastructure_hints": {
+    "types": [
+      "api",
+      "c2",
+      "http",
+      "proxy",
+      "reverse proxy",
+      "ssh",
+      "tcp"
+    ],
+    "tools": [
+      "bash",
+      "impacket",
+      "netcat",
+      "python"
+    ],
+    "domains": [
+      "-captcha[.]com",
+      "antotehlant[.]theworkpc",
+      "api[.]anti",
+      "cisa",
+      "core[.]py",
+      "debug[.]txt",
+      "fbi",
+      "gneivaientga[.]ignorelist",
+      "lalapoc[.]kozow",
+      "matbaiteahe[.]mooo",
+      "mumucnc[.]kozow",
+      "ntlmrelayx[.]py",
+      "ntlmrelayx[.]pyvi",
+      "onechoice[.]gleeze",
+      "packinstall[.]kozow",
+      "resolv[.]conf",
+      "responder-session[.]log",
+      "responder[.]db",
+      "services[.]software",
+      "srv[.]php"
+    ]
+  },
+  "iocs": {
+    "hashes": [
+      "4e32b04930d1f745eba92255ee1c5e5ac82b939ff12de0522c8a4905431d033d",
+      "c51c6aa0230a2fea888ebcd213d302f1cc9f6051fdb268ae5c7a09415845c404",
+      "40a7fd89b9e51b0a515ac2355036d203357be90a2200b9c506b95c12db54c7aa",
+      "18f891a3737bb53cd1ab451e2140654a376a43b2d75f6695f3133d47a41952b6",
+      "0429bdc6a302b4288aea1b1e2f2a7545731c50d647672fa65b012b2a2caa386e"
+    ],
+    "domains": [
+      "packinstall.kozow.com",
+      "api.anti-captcha.com",
+      "matbaiteahe.mooo.com",
+      "lalapoc.kozow.com",
+      "gneivaientga.ignorelist.com"
+    ],
+    "mutexes": []
+  },
+  "narrative": "[T1587] to a subset of compromised Ubiquiti routers to validate stolen webmail account credentials collected via cross-site scripting and browser-in-the-browser spear-phishing campaigns [T1566]. Modify ATP28 threat actors hosted NTLMv2 rogue authentication Authentication T1556 servers to modify authentication process from stolen Process credential collected during the NTLM relay attacks. [REDACTED_ACTOR] actors have installed publicly available tools such as Impacket ntlmrelayx.py[4] and Responder[5] on compromised Ubiquiti routers to execute NTLM relay attacks [T1557] and host NTLMv2 rogue authentication servers."
+}

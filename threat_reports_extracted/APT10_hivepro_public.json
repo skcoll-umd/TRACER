@@ -1,0 +1,125 @@
+{
+  "attack_ttp_ids": [
+    "T1003.002",
+    "T1003.003",
+    "T1003.004",
+    "T1005",
+    "T1016",
+    "T1018",
+    "T1021.001",
+    "T1021.004",
+    "T1027",
+    "T1036",
+    "T1036.003",
+    "T1036.005",
+    "T1039",
+    "T1046",
+    "T1047",
+    "T1049",
+    "T1053.005",
+    "T1055.012",
+    "T1056.001",
+    "T1059.001",
+    "T1059.003",
+    "T1070.003",
+    "T1070.004",
+    "T1074.001",
+    "T1074.002",
+    "T1078",
+    "T1083",
+    "T1087.002",
+    "T1090.002",
+    "T1105",
+    "T1106",
+    "T1119",
+    "T1140",
+    "T1190",
+    "T1199",
+    "T1204.002",
+    "T1210",
+    "T1218.004",
+    "T1553.002",
+    "T1560",
+    "T1560.001",
+    "T1566.001",
+    "T1568.001",
+    "T1574.001",
+    "T1574.002",
+    "T1583.001",
+    "T1588.002"
+  ],
+  "attack_tactic_ids": [
+    "TA0001",
+    "TA0002",
+    "TA0003",
+    "TA0004",
+    "TA0005",
+    "TA0006",
+    "TA0007",
+    "TA0008",
+    "TA0009",
+    "TA0011",
+    "TA0042"
+  ],
+  "attack_tactics": [
+    "Initial Access",
+    "Execution",
+    "Persistence",
+    "Privilege Escalation",
+    "Defense Evasion",
+    "Credential Access",
+    "Discovery",
+    "Lateral Movement",
+    "Collection",
+    "Command and Control",
+    "Resource Development"
+  ],
+  "delivery_vectors": [
+    "phishing"
+  ],
+  "sectors": [
+    "Aerospace",
+    "Defense",
+    "Energy",
+    "Financial",
+    "Government",
+    "Healthcare",
+    "Legal",
+    "Media",
+    "Telecom",
+    "Telecommunications",
+    "Utilities"
+  ],
+  "infrastructure_hints": {
+    "types": [
+      "api",
+      "command and control",
+      "dns",
+      "https",
+      "proxy",
+      "ssh"
+    ],
+    "tools": [
+      "mimikatz",
+      "powershell"
+    ],
+    "domains": [
+      "mimilib[.]dll",
+      "symantec-enterprise-blogs[.]security"
+    ]
+  },
+  "iocs": {
+    "hashes": [
+      "01b610e8ffcb8fd85f2d682b8a364cad2033c8104014df83988bc3ddfac8e6ec",
+      "056c0628be2435f2b2031b3287726eac38c94d1e7f7aa986969baa09468043b1",
+      "062ce400f522f90909ed5c4783c5e9c60b63c09272e2ddde3d13e748a528fa88",
+      "0b452f7051a74a1d4a544c0004b121635c15f80122dc6be54db660ceb2264d6f",
+      "0ec48b297dd1b0d6c3ddd15ab63f405191d7a849049feedfa7e44096c6f9d42a"
+    ],
+    "domains": [
+      "symantec-enterprise-blogs.security.com"
+    ],
+    "mutexes": []
+  },
+  "narrative": "It may also obfuscate and encrypt traffic it delivers back to its command-and-control (C&C) server. This version of Mimikatz includes mimilib.dll, which allows it to retrieve credentials in plain text for each user who connects to the compromised host and maintains persistence over reboots. The backdoor is a fileless virus that may avoid detection in a sandbox by looking for a registry key or postponing execution; enumerating the username, hostname, and operating system of targeted computers; searching for running processes; and downloading and executing additional payloads."
+}

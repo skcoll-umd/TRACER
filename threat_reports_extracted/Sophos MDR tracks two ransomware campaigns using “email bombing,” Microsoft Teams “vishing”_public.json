@@ -1,0 +1,123 @@
+{
+  "attack_ttp_ids": [
+    "T1018",
+    "T1049",
+    "T1059.001",
+    "T1071.001",
+    "T1090",
+    "T1105",
+    "T1482"
+  ],
+  "attack_tactic_ids": [
+    "TA0002",
+    "TA0007",
+    "TA0011"
+  ],
+  "attack_tactics": [
+    "Execution",
+    "Discovery",
+    "Command and Control"
+  ],
+  "delivery_vectors": [
+    "document",
+    "email",
+    "phishing",
+    "rdp",
+    "vishing",
+    "website"
+  ],
+  "sectors": [
+    "Defense"
+  ],
+  "infrastructure_hints": {
+    "types": [
+      "api",
+      "c2",
+      "command and control",
+      "https",
+      "proxy",
+      "rdp",
+      "sharepoint",
+      "smb",
+      "tor",
+      "vpn",
+      "web protocols",
+      "winrm"
+    ],
+    "tools": [
+      "cmd",
+      "net.exe",
+      "powershell",
+      "python",
+      "wmic"
+    ],
+    "domains": [
+      "166_65[.]py",
+      "2fwww[.]bing",
+      "37_44[.]py",
+      "45_237_80[.]py",
+      "7za[.]dll",
+      "7za[.]exe",
+      "blob[.]core",
+      "chcp[.]com",
+      "cmd[.]exe",
+      "debug[.]exe",
+      "explorer[.]exe",
+      "identity[.]jar",
+      "ipconfig[.]exe",
+      "java[.]exe",
+      "javaw[.]exe",
+      "kb641812-filter-pack-2024-1[.]dat",
+      "kryptic[.]iv",
+      "libcrypto-3-x64[.]dll",
+      "libssl-3-x64[.]dll",
+      "llladminhlpll[.]onmicrosoft",
+      "mailqueue-handler[.]jar",
+      "microsoftcorporationll[.]quickassist",
+      "msedge[.]exe",
+      "mstsc[.]exe",
+      "net1[.]exe",
+      "net[.]exe",
+      "nethost[.]dll",
+      "news[.]sophos",
+      "nltest[.]exe",
+      "notepad[.]exe",
+      "onedrivestandaloneupdate[.]exe",
+      "onedrivestandaloneupdater[.]exe",
+      "pack-2024-2[.]dat",
+      "pack[.]zip",
+      "ping[.]exe",
+      "powershell[.]exe",
+      "protonvpn[.]exe",
+      "reg[.]exe",
+      "runtimebroker[.]exe",
+      "settingsbackup[.]dat",
+      "svchost[.]exe",
+      "tar[.]exe",
+      "upd2836a[.]bkt",
+      "vcruntime140[.]dll",
+      "whoami[.]exe",
+      "windows[.]net",
+      "winhttp[.]dll",
+      "winter[.]zip",
+      "wmic[.]exe"
+    ]
+  },
+  "iocs": {
+    "hashes": [],
+    "domains": [
+      "news.sophos.com",
+      "chcp.com",
+      "llladminhlpll.onmicrosoft.com",
+      "blob.core.windows.net",
+      "2fwww.bing.com"
+    ],
+    "mutexes": [
+      "Local\\OneDriveUpdate",
+      "Local\\OneDriveUpdate\\OneDriveStandaloneUpdater.exe",
+      "Local\\OneDriveUpdate\\winhttp.dll",
+      "Local\\OneDriveUpdate\\settingsbackup.dat"
+    ]
+  },
+  "narrative": "Persistence After making other configuration changes manually via a command shell over the Quick Assist connection and the initial execution of the legitimate ‘OneDriveStandaloneUpdater.exe’ binary, the attacker then executed a PowerShell command to create a service to automatically run the exploited executable. Through this remote-control session that the attacker was able to open a command shell and drop files and execute malware, deploying them from an external SharePoint file store. The registry key entries provided the IP addresses used for the command-and-control connections made by the malicious winhttp.dll code."
+}

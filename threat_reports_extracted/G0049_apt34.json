@@ -1,0 +1,107 @@
+{
+  "attack_ttp_ids": [
+    "T1007",
+    "T1027",
+    "T1033",
+    "T1049",
+    "T1053",
+    "T1053.005",
+    "T1056",
+    "T1056.001",
+    "T1057",
+    "T1059",
+    "T1059.001",
+    "T1082",
+    "T1083",
+    "T1087",
+    "T1087.002",
+    "T1112",
+    "T1113",
+    "T1124",
+    "T1204",
+    "T1204.002",
+    "T1518",
+    "T1518.001",
+    "T1560",
+    "T1560.001",
+    "T1566",
+    "T1566.001",
+    "T1573",
+    "T1573.001"
+  ],
+  "attack_tactic_ids": [
+    "TA0001",
+    "TA0002",
+    "TA0003",
+    "TA0004",
+    "TA0005",
+    "TA0006",
+    "TA0007",
+    "TA0009",
+    "TA0011"
+  ],
+  "attack_tactics": [
+    "Initial Access",
+    "Execution",
+    "Persistence",
+    "Privilege Escalation",
+    "Defense Evasion",
+    "Credential Access",
+    "Discovery",
+    "Collection",
+    "Command and Control"
+  ],
+  "delivery_vectors": [
+    "attachment",
+    "document",
+    "macro",
+    "phishing"
+  ],
+  "sectors": [
+    "Chemical",
+    "Defense",
+    "Education",
+    "Energy",
+    "Financial",
+    "Government",
+    "Hospitality",
+    "Legal",
+    "Telecom",
+    "Telecommunications"
+  ],
+  "infrastructure_hints": {
+    "types": [
+      "c2",
+      "command and control",
+      "http",
+      "https",
+      "ldap"
+    ],
+    "tools": [
+      "powershell"
+    ],
+    "domains": [
+      "attack[.]mitre",
+      "discoverywassavedinanxmlfilepriortoexfiltration[.]severalfilescollected",
+      "hivepro",
+      "script[.]ps",
+      "temp[.]ps",
+      "thedfirreport[.]com"
+    ]
+  },
+  "iocs": {
+    "hashes": [
+      "0b676ea2ad205b70b9feb1eedbfdec72137e08e5",
+      "b8c8171b6e8efd2bb0ae8d5b22749564edd38109",
+      "a86088cf31c72cc4648ee8dfa082979a74044203",
+      "2ca263fc5f1e505c1839ab0abf56571af6c7809d",
+      "c5f6a48fa52a279e1f3424b97662b479716229af"
+    ],
+    "domains": [
+      "thedfirreport.com",
+      "hivepro.com"
+    ],
+    "mutexes": []
+  },
+  "narrative": "Severalfilescollected during discovery tasks, such as domain user account information and later the keylogger collected data, were exfiltrated to the C2 server via POST requests. The #2 Iranian [REDACTED_ACTOR] group initiated discovery operations using basic commands executed through PowerShell cmdlets or standard Windows tools such as whoami, net, time, tzutil, and tracert. .002 T1082."
+}

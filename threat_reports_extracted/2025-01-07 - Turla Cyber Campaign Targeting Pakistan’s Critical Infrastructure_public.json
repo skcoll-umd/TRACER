@@ -1,0 +1,58 @@
+{
+  "attack_ttp_ids": [
+    "T1036",
+    "T1059",
+    "T1102",
+    "T1105",
+    "T1189",
+    "T1566"
+  ],
+  "attack_tactic_ids": [
+    "TA0001",
+    "TA0002",
+    "TA0005",
+    "TA0011"
+  ],
+  "attack_tactics": [
+    "Initial Access",
+    "Execution",
+    "Defense Evasion",
+    "Command and Control"
+  ],
+  "delivery_vectors": [
+    "drive-by",
+    "email",
+    "phishing",
+    "website"
+  ],
+  "sectors": [
+    "Defense",
+    "Energy",
+    "Government",
+    "Legal",
+    "Media",
+    "Telecom",
+    "Telecommunications"
+  ],
+  "infrastructure_hints": {
+    "types": [
+      "c2",
+      "command and control"
+    ],
+    "tools": [],
+    "domains": [
+      "connectotels[.]net",
+      "hostelhotels[.]net",
+      "socradar"
+    ]
+  },
+  "iocs": {
+    "hashes": [],
+    "domains": [
+      "connectotels.net",
+      "hostelhotels.net"
+    ],
+    "mutexes": []
+  },
+  "narrative": "Key strategies include DLL hijacking, which allows them to remain undetected, and multi-layered encryption for secure communications. The malware used in this campaign is tailored to exfiltrate sensitive data and disrupt target systems. This method of leveraging third-party infrastructure allowed [REDACTED_ACTOR] to obfuscate its operations, complicating attribution efforts, and enhance its espionage capabilities."
+}

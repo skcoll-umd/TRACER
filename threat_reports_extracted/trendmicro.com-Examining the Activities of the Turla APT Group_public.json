@@ -1,0 +1,111 @@
+{
+  "attack_ttp_ids": [
+    "T0003",
+    "T0007",
+    "T1010",
+    "T1016",
+    "T1027",
+    "T1033",
+    "T1041",
+    "T1047",
+    "T1048",
+    "T1053",
+    "T1055",
+    "T1057",
+    "T1059",
+    "T1069",
+    "T1071",
+    "T1082",
+    "T1083",
+    "T1087",
+    "T1102",
+    "T1112",
+    "T1120",
+    "T1135",
+    "T1189",
+    "T1204",
+    "T1204.002",
+    "T1213",
+    "T1547.009",
+    "T1566",
+    "T1571",
+    "T1573"
+  ],
+  "attack_tactic_ids": [
+    "TA0001",
+    "TA0002",
+    "TA0003",
+    "TA0004",
+    "TA0005",
+    "TA0007",
+    "TA0009",
+    "TA0010",
+    "TA0011"
+  ],
+  "attack_tactics": [
+    "Initial Access",
+    "Execution",
+    "Persistence",
+    "Privilege Escalation",
+    "Defense Evasion",
+    "Discovery",
+    "Collection",
+    "Exfiltration",
+    "Command and Control"
+  ],
+  "delivery_vectors": [
+    "document",
+    "drive-by",
+    "email",
+    "phishing",
+    "watering hole",
+    "watering-hole",
+    "website"
+  ],
+  "sectors": [
+    "Defense",
+    "Education",
+    "Government",
+    "Mining",
+    "Transport"
+  ],
+  "infrastructure_hints": {
+    "types": [
+      "api",
+      "c2",
+      "command and control",
+      "dropbox",
+      "http",
+      "rpc"
+    ],
+    "tools": [
+      "bash",
+      "cmd",
+      "mimikatz",
+      "powershell",
+      "python",
+      "tasklist",
+      "wget"
+    ],
+    "domains": [
+      "agent[.]btz",
+      "cmd[.]exe",
+      "examining-the-activities-of-the-turla-group[.]html",
+      "ndproxy[.]sys",
+      "powershell[.]exe",
+      "trendmicro",
+      "trojan[.]turla",
+      "trojan[.]wipbot",
+      "w32time[.]dll",
+      "w64time[.]dll"
+    ]
+  },
+  "iocs": {
+    "hashes": [],
+    "domains": [
+      "trendmicro.com"
+    ],
+    "mutexes": []
+  },
+  "narrative": "T1189 (Drive-by Compromise) T1566 (Phishing) [REDACTED_ACTOR] (Execution) T1204.002 (User Execution: Malicious File) December: Turla targets Linux While the previous Turla campaigns were designed to target Windows-based machines, the campaign in August 2014 was the first instance where Turla targeted the Linux operating system. The [REDACTED_MALWARE] framework consists of a dropper to install its configuration file, a component to communicate with the C&C server, an orchestrator to handle tasks and move them laterally over the network, and a loader to execute the orchestrator. It had the ability to execute commands related to the reading and writing of files, executing additional processes, and setting persistence via DLL hijacking on Google Chrome, Mozilla Firefox, or Microsoft OneDrive."
+}
